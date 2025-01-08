@@ -4,7 +4,9 @@ import { PaymentsModule } from './payments/payments.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/tennis'),
+    MongooseModule.forRoot(
+      'mongodb+srv://savealittle:SGPjiSrNg0JrYgrL@savealittle.9qrw6.mongodb.net/',
+    ),
     PaymentsModule,
   ],
 })

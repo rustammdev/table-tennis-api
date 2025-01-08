@@ -68,13 +68,18 @@ Bu API stol tennisi vaqtlarini boshqarish va to‘lovlarni qayd etish uchun yara
 
 ### To'lovlar ro'yxati
 
-**URL:** `/payments`  
+**URL:** `/payments?page={page_number}&limit={data_limit}`  
 **Method:** `GET`
 
 **Query params:**
 
 - `page`: Sahifa raqami (ixtiyoriy, default: 1)
 - `limit`: Har bir sahifadagi yozuvlar soni (ixtiyoriy, default: 10)
+
+Misol uchun:
+
+- 1 `/payments?page=1&limit=10`
+- 1 `/payments?page=2&limit=10`
 
 **Javob:**
 
